@@ -9,7 +9,7 @@ class DB
 	// các biến thông tin kết nối
 	private $__hostname = "localhost",
 		$__username = "root",
-		$__password = "",
+		$__password = "admin",
 		$__dbname = "newspage";
 
 	// biến lưu kết nối
@@ -111,8 +111,8 @@ class DB
 	 */
 	public function set_char($uni)
 	{
-		if ($this->Conn) {
-			mysqli_set_charset($this->Conn, $uni);
+		if ($this->conn) {
+			mysqli_set_charset($this->conn, $uni);
 		}
 	}
 }

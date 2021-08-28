@@ -37,8 +37,8 @@ class Session
      * Hàm xóa session
      * @author CreatedBy: dbhuan (28/08/2021)
      */
-    public function destroy()
+    public function destroy($key)
     {
-        session_destroy();
+        $_SESSION[$key] = null;
     }
 }
